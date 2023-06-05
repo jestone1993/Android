@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubbles1"
+    tools:context=".LoginViewActivity">
+
+    <TextView
+        android:id="@+id/spiice"
+        android:layout_width="244dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="218dp"
+        android:layout_marginBottom="467dp"
+        android:fontFamily="@font/red_hat_display_medium"
+        android:text="@string/spiice"
+        android:textAppearance="@style/spiice"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <Button
+        android:id="@+id/button_spiice"
+        android:layout_width="263dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/my_buttons"
+        android:fontFamily="@font/public_sans_medium"
+        android:onClick="buttonSpiice"
+        android:text="@string/discover_the_platform"
+        android:textAppearance="@style/discover_th"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spiice"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/public_sans_medium"
+        android:onClick="loginView"
+        android:text="@string/login"
+        android:textColor="@color/text_clor_black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_spiice" />
+
+
+</android.support.constraint.ConstraintLayout>
